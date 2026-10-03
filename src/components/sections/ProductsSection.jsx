@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router";
 import ProductCard from "../pages/cosepiccole/ProductCard";
+import { CircleArrowOutUpRight } from "lucide-react";
 
 const endpoint = "https://dummyjson.com/products?limit=12";
 
@@ -27,7 +28,12 @@ export default function ProductsSection() {
                 thumbnail={p.thumbnail}
                 category={p.category}
               >
-                <Link to={`/products/${p.id}`}>Open Detail</Link>
+                <Link
+                  to={`/products/${p.id}`}
+                  className="text-decoration-none text-muted fs-6 "
+                >
+                  <CircleArrowOutUpRight size={14} /> Open Detail
+                </Link>
               </ProductCard>
             </div>
           ))}
@@ -36,8 +42,3 @@ export default function ProductsSection() {
     </>
   );
 }
-// Nella pagina Prodotti:
-
-// Utilizzando il seguente endpoint  ottenere e mostrare in pagina i prodotti
-// Ogni prodotto deve avere un link che ci porti alla pagina di dettaglio del prodotto (usa <Link>)
-// Configuriamo la rotta dinamica con il parametro :id da usare per la pagina di dettaglio del prodotto

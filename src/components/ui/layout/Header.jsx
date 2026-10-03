@@ -1,4 +1,5 @@
 import { PackageSearch } from "lucide-react";
+import { Banana } from "lucide-react";
 import { Info } from "lucide-react";
 import { House } from "lucide-react";
 import { NavLink } from "react-router";
@@ -13,7 +14,7 @@ export default function Header() {
   return (
     <header className="bg-body-secondary px-1 py-2 d-flex justify-content-around align-items-center">
       <h1 className="my-0">
-        Welcome "<code>React Routing</code>"!
+        <Banana /> Welcome "<code>React Routing</code>"!
       </h1>
       <ul className="d-flex align-items-center gap-2 list-unstyled mb-0 p-0">
         {pages.map((item) => (
