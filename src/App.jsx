@@ -3,6 +3,7 @@ import HomePage from "./components/pages/HomePage";
 import AboutUsPage from "./components/pages/AboutUsPage";
 import ProductsPage from "./components/pages/ProductsPage";
 import DefaultLayout from "./components/ui/layout/DefaultLayout";
+import SingleProduct from "./components/pages/SingleProduct";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Route path="/" element={<HomePage />}></Route>
           <Route path="/about-us" element={<AboutUsPage />}></Route>
           <Route path="/products" element={<ProductsPage />}></Route>
+          <Route path="/products/:id" element={<SingleProduct />}></Route>
         </Route>
       </Routes>
     </BrowserRouter>

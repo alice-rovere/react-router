@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { Link } from "react-router";
 import ProductCard from "../pages/cosepiccole/ProductCard";
 
 const endpoint = "https://dummyjson.com/products?limit=12";
@@ -18,14 +19,16 @@ export default function ProductsSection() {
   return (
     <>
       {products && (
-        <div className="row row-cols-3 g-4">
+        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
           {products.map((p) => (
             <div key={p.id}>
               <ProductCard
                 title={p.title}
-                category={p.category}
                 thumbnail={p.thumbnail}
-              />
+                category={p.category}
+              >
+                <Link to={`/products/${p.id}`}>Open Detail</Link>
+              </ProductCard>
             </div>
           ))}
         </div>
