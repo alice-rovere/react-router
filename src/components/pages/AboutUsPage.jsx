@@ -1,3 +1,9 @@
+import MainContent from "../ui/layout/MainContent";
+
 export default function AboutUsPage() {
-  return <div>AboutUsPage</div>;
+  return (
+    <MainContent titolo="Chi siamo?" sottotitolo="Da dove veniamo?">
+      <p>Dove andremo?</p>
+    </MainContent>
+  );
 }

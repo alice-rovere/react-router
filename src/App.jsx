@@ -19,7 +19,3 @@ function App() {
 }
 
 export default App;
-// Creiamo almeno 3 pagine principali:
-//    - Homepage (con un messaggio di benvenuto o immagine promozionale)
-//    - Chi siamo
-//    - Prodotti (pagina che mostrerà la lista dei prodotti prendendoli dalla API)
