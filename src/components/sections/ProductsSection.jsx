@@ -31,18 +31,22 @@ export default function ProductsSection() {
                 thumbnail={p.thumbnail}
                 category={p.category}
               >
-                <Link
-                  to={`/products/${p.id}`}
-                  className="text-decoration-none text-muted fs-6 "
-                >
-                  <CircleArrowOutUpRight size={14} /> Open Detail
-                </Link>
-                <button
-                  onClick={() => handleAddProduct(p)}
-                  className="btn btn-secondary mt-3"
-                >
-                  <ShoppingCartPlus size="15"></ShoppingCartPlus>
-                </button>
+                <div className="d-flex align-items-center justify-content-between gap-2 mt-3 pt-3 border-top">
+                  <Link
+                    to={`/products/${p.id}`}
+                    className="btn btn-outline-secondary btn-sm rounded-pill d-inline-flex align-items-center gap-2"
+                  >
+                    <CircleArrowOutUpRight size={14} /> Open Detail
+                  </Link>
+                  <button
+                    onClick={() => handleAddProduct(p)}
+                    className="btn btn-secondary rounded-2 p-2"
+                    aria-label={`Add ${p.title} to cart`}
+                    title="Add to cart"
+                  >
+                    <ShoppingCartPlus size={20} />
+                  </button>
+                </div>
               </ProductCard>
             </div>
           ))}
