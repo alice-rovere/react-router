@@ -1,0 +1,33 @@
+.product-card {
+  height: 100%;
+}
+
+.product-card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card-title {
+  display: -webkit-box;
+  min-height: 2.4em;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-height: 1.2;
+}
+
+.product-card-category {
+  min-height: 1.5em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.product-card-image {
+  height: 180px;
+  object-fit: contain;
+}
+
+.product-card-actions {
+  margin-top: auto !important;
+}
