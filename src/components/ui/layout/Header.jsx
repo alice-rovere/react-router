@@ -3,6 +3,7 @@ import { Banana } from "lucide-react";
 import { Info } from "lucide-react";
 import { House } from "lucide-react";
 import { NavLink } from "react-router";
+import DropDown from "../../pages/cosepiccole/DropDown";
 
 const pages = [
   { id: 1, text: <House />, path: "/" },
@@ -29,6 +30,9 @@ export default function Header() {
             </NavLink>
           </li>
         ))}
+        <li>
+          <DropDown />
+        </li>
       </ul>
     </header>
   );

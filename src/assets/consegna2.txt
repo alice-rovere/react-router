@@ -1,0 +1,1 @@
+Aggiungere al vostro esercizio (React Router Store) uno state globale che tenga traccia dei prodotti aggiunti al carrello e che mostri il totale degli elementi aggiunti attraverso un componente da inserire nell'header.
