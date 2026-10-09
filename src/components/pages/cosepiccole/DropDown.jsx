@@ -5,17 +5,18 @@ import ShoppingCart from "./ShoppingCart";
 export default function DropDown() {
   const { cartProducts } = useCartProductContext();
   return (
-    <div className="dropdown">
+    <div className="dropdown ms-5">
       <button
-        className="btn btn-secondary dropdown-toggle"
+        className="btn btn-secondary dropdown-toggle d-flex align-items-center gap-2"
         type="button"
         id="dropdownMenuButton"
         data-bs-toggle="dropdown"
         aria-haspopup="true"
         aria-expanded="false"
+        disabled={cartProducts.length === 0}
       >
-        <ShoppingCart />
         Vedi Carrello
+        <ShoppingCart />
       </button>
       <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
         {cartProducts.map((cartProd) => (

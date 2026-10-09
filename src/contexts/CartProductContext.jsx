@@ -9,7 +9,6 @@ export default function CartContextProvider({ children }) {
   const totCartProducts = cartProducts.length;
   function handleAddProduct(prod) {
     setCartProducts((actual) => [...actual, prod]);
-    console.log(totCartProducts);
   }
   return (
     <CartProductContext.Provider
