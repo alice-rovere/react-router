@@ -28,7 +28,7 @@ export default function SingleProduct() {
               <p>{prodotto.category}</p>
               <img className="card-img w-50" src={prodotto.thumbnail} alt="" />
               <Link
-                to="./product"
+                to="/products"
                 className="text-decoration-none text-muted fs-6 d-block"
               >
                 <ArrowUpLeftFromCircle size={15}>back</ArrowUpLeftFromCircle>

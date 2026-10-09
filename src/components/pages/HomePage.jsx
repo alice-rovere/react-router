@@ -3,10 +3,13 @@ import MainContent from "../ui/layout/MainContent";
 export default function HomePage() {
   return (
     <MainContent
-      titolo="Titolo della homepage"
-      sottotitolo="Sottotitolo della home"
+      titolo="Trova ciò che fa per te"
+      sottotitolo="Esplora la nostra selezione e lasciati ispirare: qualità e stile ti aspettano."
     >
-      <p>Children della home</p>
+      <p>
+        Dai un'occhiata ai nostri prodotti e scopri qualcosa di nuovo da
+        aggiungere alla tua quotidianità.
+      </p>
     </MainContent>
   );
 }

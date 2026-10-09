@@ -1,7 +1,4 @@
-import { PackageSearch } from "lucide-react";
-import { Banana } from "lucide-react";
-import { Info } from "lucide-react";
-import { House } from "lucide-react";
+import { PackageSearch, Banana, Info, House } from "lucide-react";
 import { NavLink } from "react-router";
 import DropDown from "../../pages/cosepiccole/DropDown";
 
